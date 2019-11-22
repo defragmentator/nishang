@@ -2813,10 +2813,10 @@ Main
         $sessions
         $IDs = $sessions.Substring(39,7).Trim() -replace "ID"
         Write-Verbose "Logging off all connections"
-        foreach ($ID in $IDs)
-        {
-            Invoke-Expression "logoff $ID"
-        }
+       # foreach ($ID in $IDs)
+       # {
+       #     Invoke-Expression "logoff $ID"
+       # }
 
         :infinite while ($true)
         {
